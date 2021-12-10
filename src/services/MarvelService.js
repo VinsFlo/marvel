@@ -13,8 +13,8 @@ class MarvelService {
 	}
 
 	getAllCharacters = () => {
-		// return this.getResource(`${this._apiBase}characters?limit=9&offset=210&${this._apiKey}`);
-		return this.getResource(`https://gateway.marvel.com:443/v1/public/characters?limit=9&offset=210&apikey=744534304ffacc290564d8cbde277a91`);
+		return this.getResource(`${this._apiBase}characters?limit=9&offset=210&${this._apiKey}`);
+		// return this.getResource(`https://gateway.marvel.com:443/v1/public/characters?limit=9&offset=210&apikey=744534304ffacc290564d8cbde277a91`);
 	}
 
 	getCharacter = (id) => {
