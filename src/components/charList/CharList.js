@@ -34,7 +34,7 @@ class CharList extends Component {
 		})
 	}
 
-	// Метод создан для оптимизации, 
+	// Этот метод создан для оптимизации, 
 	// чтобы не помещать такую конструкцию в метод render
 	renderItems(arr) {
 		const items = arr.map((item) => {
@@ -53,7 +53,7 @@ class CharList extends Component {
 				</li>
 			)
 		});
-		//Конструкция вынесена для центровки спиннера/ошибки
+		// А эта конструкция вынесена для центровки спиннера/ошибки
 		return (
 			<ul className="char__grid">
 				{items}
