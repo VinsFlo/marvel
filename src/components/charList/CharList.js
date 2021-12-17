@@ -42,10 +42,7 @@ class CharList extends Component {
 			}
 
 			return (
-				<li
-					className="char__item"
-					key={item.id}
-					onClick={() => this.props.onCharSelected(item.id)}>
+				<li key={item.id} className="char__item">
 					<img src={item.thumbnail} alt={item.name} style={imgStyle} />
 					<div className="char__name">{item.name}</div>
 				</li>
@@ -53,7 +50,7 @@ class CharList extends Component {
 		});
 
 		return (
-			<ul className="char__grid">
+			<ul className="char__grid" >
 				{items}
 			</ul>
 		)
