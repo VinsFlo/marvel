@@ -9,7 +9,7 @@ import decoration from '../../resources/img/vision.png';
 
 const App = () => {
 
-	const [selectedChar, setChar] = useState(null);
+	const [selectedChar, setChar] = useState(null); //объявление новой переменной состояния selectedChar
 
 	const onCharSelected = (id) => {
 		setChar(id);
